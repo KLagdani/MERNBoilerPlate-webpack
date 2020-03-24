@@ -1,0 +1,45 @@
+{
+  "name": "mern-kl-boilerplate",
+  "version": "1.0.0",
+  "description": "Manage your stocks",
+  "main": "server.js",
+  "engines": {
+    "node": "12.16.1"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run dev-server --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "NODE_ENV=test mocha './{,!(client)/**}/*.mytest.js' --timeout 5000",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "lagdani",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "concurrently": "^5.1.0",
+    "create-react-app": "^3.4.0",
+    "dotenv": "^8.2.0",
+    "expect": "^25.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "g": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.1.0",
+    "mongoose": "^5.9.1",
+    "nodemailer": "^6.4.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sinon": "^9.0.0"
+  },
+  "devDependencies": {
+    "chai-match": "^1.1.1",
+    "nodemon": "^2.0.2"
+  }
+}

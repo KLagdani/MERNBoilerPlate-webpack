@@ -1,0 +1,113 @@
+body {
+  // font-family: "Lato", sans-serif;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $basic-grey;
+}
+
+.heading-first {
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    z-index: 100;
+  }
+
+  &--sub {
+    color: $basic-grey-second;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-second {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  color: $main-color;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    text-shadow: 0.2rem 0.2rem 5rem rgba($basic-black, 0.2);
+    letter-spacing: 0.3rem;
+  }
+}
+
+.heading-third {
+  font-size: 3rem;
+  font-weight: 500;
+  display: inline-block;
+  color: $main-color;
+  letter-spacing: 0.3rem;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  text-align: justify;
+  &-danger {
+    color: red;
+  }
+
+  &-success {
+    color: $second-color-light !important;
+  }
+}
+
+.btn__link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 0 1rem 0.3rem 1rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($basic-black, 0.1);
+    border-bottom: 1px solid $main-color-light;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 2rem 1rem rgba($basic-black, 0.1);
+    outline: none;
+    border-bottom: 1px solid $main-color;
+  }
+
+  &-white {
+    &,
+    &:link,
+    &:visited {
+      color: $basic-white;
+      border-bottom: 1px solid $basic-white;
+    }
+  }
+  &-black {
+    &,
+    &:link,
+    &:visited {
+      color: $basic-grey;
+      border-bottom: 1px solid $basic-grey;
+    }
+  }
+
+  &-smol {
+    &,
+    &:link,
+    &:visited {
+      color: $basic-grey-third;
+      border: none;
+      font-style: italic;
+    }
+  }
+}

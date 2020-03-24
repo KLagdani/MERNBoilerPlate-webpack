@@ -1,0 +1,70 @@
+.login-page_content {
+  @include absCenter;
+  width: 90%;
+  height: 80%;
+
+  &_btn__link {
+    &,
+    &:link,
+    &:visited {
+      color: $basic-grey;
+      text-decoration: none;
+      padding: 0 1rem 0.3rem 1rem;
+      border-bottom: 1px solid $basic-grey;
+      transition: all 0.2s;
+      margin-bottom: 2rem;
+    }
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($basic-black, 0.1);
+      border-bottom: 1px solid $main-color-light;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 2rem 1rem rgba($basic-black, 0.1);
+      outline: none;
+      border-bottom: 1px solid $main-color;
+    }
+  }
+
+  &-row {
+    height: 100%;
+  }
+
+  &-left {
+    height: 100%;
+    background-color: $basic-white;
+    margin-right: 0 !important;
+    text-align: center;
+    display: table;
+    z-index: 1;
+
+    &_new-link {
+      margin-bottom: 3rem;
+    }
+    &_form {
+      padding: 3rem;
+      height: 90%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  &-right {
+    height: 100%;
+    background-color: $second-color-light;
+    text-align: center;
+
+    &_img {
+      width: 72%;
+      margin: 0 auto;
+      margin-top: 12rem;
+    }
+    &_text {
+      color: $basic-white;
+      &-title {
+        color: $basic-white;
+      }
+    }
+  }
+}

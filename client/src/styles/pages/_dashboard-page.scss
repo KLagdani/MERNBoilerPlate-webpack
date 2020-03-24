@@ -1,0 +1,17 @@
+.dashboard-page {
+  position: relative;
+  &_cover {
+    background: url(/img/cover.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(0.7rem);
+    -webkit-filter: blur(0.7rem);
+    -moz-filter: blur(0.7rem);
+    -o-filter: blur(0.7rem);
+    -ms-filter: blur(0.7rem);
+  }
+}

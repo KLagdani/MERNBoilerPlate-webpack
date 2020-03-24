@@ -1,0 +1,32 @@
+.footer {
+  &__copyright {
+    color: white;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: $basic-white;
+      text-decoration: none;
+      padding: 0 1rem 0.3rem 1rem;
+      transition: all 0.2s;
+    }
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($basic-black, 0.1);
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 2rem 1rem rgba($basic-black, 0.1);
+      outline: none;
+    }
+  }
+}

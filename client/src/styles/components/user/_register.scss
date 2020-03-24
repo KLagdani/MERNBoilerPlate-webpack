@@ -1,0 +1,41 @@
+.register-page_content {
+  @include absCenter;
+  width: 90%;
+  height: 80%;
+
+  &-row {
+    height: 100%;
+  }
+
+  &-left {
+    height: 100%;
+    background-color: $second-color-light;
+    margin-right: 0 !important;
+    text-align: center;
+    &_img {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 8rem;
+    }
+    &_text {
+      color: $basic-white;
+      &-title {
+        color: $basic-white;
+      }
+    }
+  }
+
+  &-right {
+    height: 100%;
+    background-color: $basic-white;
+    text-align: center;
+    display: table;
+    z-index: 1;
+    &_form {
+      padding: 3rem;
+      height: 90%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
