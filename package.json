@@ -12,7 +12,7 @@
     "server": "nodemon server.js",
     "client": "npm run dev-server --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build:prod",
+    "heroku-postbuild": "cd client && npm install && npm rebuild node-sass && npm run build:prod",
     "test": "NODE_ENV=test mocha './{,!(client)/**}/*.mytest.js' --timeout 5000",
     "test-watch": "nodemon --exec \"npm test\""
   },
