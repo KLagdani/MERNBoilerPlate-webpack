@@ -2,3 +2,8 @@
 package-lock.json
 /config/keys.js
 .env
+/client/node_modules
+/client/public/bundle.js
+/client/public/bundle.js.map
+/client/public/styles.css
+/client/public/styles.css.map
