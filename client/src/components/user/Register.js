@@ -115,7 +115,7 @@ class Register extends React.Component {
               />
               <div className="u-center-text register-page_content-left_text">
                 <h2 className="heading-third register-page_content-left_text-title u-margin-bottom-small">
-                  Register
+                  Register Here
                 </h2>
                 <p className="paragraph u-center-text register-page_content-left_text-p">
                   Hello, glad you're here :)
